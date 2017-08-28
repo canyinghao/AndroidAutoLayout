@@ -25,4 +25,5 @@
         <attr name="layout_auto_paddingLeft" format="integer"/>
         <attr name="layout_auto_paddingRight" format="integer"/>
     </declare-styleable>
+
 </resources>

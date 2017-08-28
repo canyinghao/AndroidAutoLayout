@@ -6,14 +6,14 @@
               android:orientation="vertical"
     >
 
-    <android.support.design.widget.TabLayout
+    <com.zhy.sample.view.AutoTabLayout
         android:id="@+id/id_tablayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="96px"
         app:tabGravity="fill"
+        app:tabMode="fixed"
         android:background="#FFFFFF"
         app:tabIndicatorColor="#1fb6c4"
-        app:tabMode="fixed"
         app:tabSelectedTextColor="#1fb6c4"
         app:tabTextColor="#000000"/>
 
