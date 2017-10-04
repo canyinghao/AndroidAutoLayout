@@ -13,6 +13,6 @@ public class UseDeviceSizeApplication extends Application
     public void onCreate()
     {
         super.onCreate();
-        AutoLayoutConifg.getInstance().useDeviceSize().init(this).setDefaultBaseWidth(true);
+        AutoLayoutConifg.getInstance().useDeviceSize().init(this);
     }
 }

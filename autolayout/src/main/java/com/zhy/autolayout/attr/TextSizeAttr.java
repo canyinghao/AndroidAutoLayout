@@ -24,7 +24,7 @@ public class TextSizeAttr extends AutoAttr
     @Override
     protected boolean defaultBaseWidth()
     {
-        return false;
+        return true;
     }
 
     @Override

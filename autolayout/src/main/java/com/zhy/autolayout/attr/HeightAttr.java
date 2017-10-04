@@ -3,16 +3,11 @@ package com.zhy.autolayout.attr;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.zhy.autolayout.config.AutoLayoutConifg;
-import com.zhy.autolayout.utils.AutoUtils;
-
 /**
  * Created by zhy on 15/12/5.
  */
 public class HeightAttr extends AutoAttr
 {
-
-
     public HeightAttr(int pxVal, int baseWidth, int baseHeight)
     {
         super(pxVal, baseWidth, baseHeight);
@@ -34,12 +29,7 @@ public class HeightAttr extends AutoAttr
     protected void execute(View view, int val)
     {
         ViewGroup.LayoutParams lp = view.getLayoutParams();
-        if(AutoLayoutConifg.getInstance().isDefaultBaseWidth()){
-            lp.height = AutoUtils.getPercentWidthSize(pxVal);
-        }else{
-            lp.height = val;
-        }
-
+        lp.height = val;
     }
 
     public static HeightAttr generate(int val, int baseFlag)

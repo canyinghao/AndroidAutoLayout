@@ -26,7 +26,6 @@ public class AutoLayoutConifg {
 
     private boolean useDeviceSize;
 
-    private boolean isDefaultBaseWidth;
 
     private AutoLayoutConifg() {
     }
@@ -65,14 +64,7 @@ public class AutoLayoutConifg {
         return mDesignHeight;
     }
 
-    public boolean isDefaultBaseWidth(){
-        return  isDefaultBaseWidth;
-    }
 
-    public AutoLayoutConifg setDefaultBaseWidth(boolean defaultBaseWidth) {
-        isDefaultBaseWidth = defaultBaseWidth;
-        return this;
-    }
 
     public AutoLayoutConifg init(Context context){
         getMetaData(context);
